@@ -1,0 +1,150 @@
+/* General Button Styles */
+button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  margin: 20px; /* Adds spacing between buttons */
+}
+
+/* First Button - Original */
+.button-one {
+  background: #183153;
+}
+
+.button-one::after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #FFD401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.button-one:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.button-one span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-one:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+/* Second Button - Variant */
+.button-two {
+  background: #183153;
+}
+
+.button-two::after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #FFD401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: auto;
+  left: auto;
+}
+
+.button-two:hover::after {
+  right: auto;
+  left: auto;
+  width: 100%;
+}
+
+.button-two span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-two:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+/* Third Button - New Variant */
+.button-three {
+  background: #183153;
+}
+
+.button-three::after {
+  content: " ";
+  width: 100%;
+  height: 0%;
+  background: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  bottom: 0;
+  border-radius: 0%;
+  transform: scale(1);
+  transition-duration: 0.4s, 0.2s, 0.2s, 0.4s;
+}
+
+.button-three:hover::after {
+  bottom: auto;
+  top: 0;
+  height: 100%;
+  border-radius: 50%;
+  transform: scale(1.5);
+}
+
+.button-three span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-three:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+/* Animation */
+@keyframes scaleUp {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(0.95);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
