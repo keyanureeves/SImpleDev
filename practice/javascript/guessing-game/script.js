@@ -1,13 +1,18 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
-let guesses = [];
-let guessCount = 1;
-const maxGuesses = 10;
+
+let guesses = [];  // an array to store players past guesses 
+let guessCount = 1; //keeps track of how many guesses have been made 
+const maxGuesses = 10; // the number of turns the player is allowed 
+
+
 
 const guessField = document.getElementById('guessField');
 const guessSubmit = document.getElementById('guessSubmit');
 const guessesSpan = document.getElementById('guesses');
 const lastResult = document.getElementById('lastResult');
 const lowOrHigh = document.getElementById('lowOrHigh');
+
+
 
 function checkGuess() {
   const userGuess = Number(guessField.value);
@@ -35,6 +40,10 @@ function checkGuess() {
   guessField.value = '';
   guessField.focus();
 }
+
+
+
+
 
 function gameOver() {
   guessField.disabled = true;
