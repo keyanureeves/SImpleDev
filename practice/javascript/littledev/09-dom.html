@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM</title>
+  </head>
+  <body>
+
+    <button> Hello</button>
+    <button class="js-button"> Second Button</button>
+
+
+
+
+    <script>/*
+
+      document.body.innerHTML = 'hello'; // document is also a built it in object
+      document.title = 'Good job'; // it also methods 
+
+      //properties and methods we can use 
+
+      console.log(document.title);
+
+      document.title = 'changed'
+
+      console.log(document.body) ; //the html element is converted to a js object
+
+      console.log(typeof document.body)
+      console.log(document.body.innerHTML);
+
+      document.body.innerHTML = '<button>Good job </Button.';
+      
+      // a method is a function that is saved inside an object*/
+
+      //document.querySelector lets us get any element from the page and put it inside javascript
+
+     console.log(document.querySelector('button').innerHTML); // the string shows what element to get// when a html element is in js it becomes a js object
+
+     document.querySelector('button').innerHTML = 'Changed';
+
+     const buttonElement = document.querySelector('.js-button');
+
+     console.log('buttonElement')
+
+     
+
+     
+
+
+
+
+      
+     
+    </script>
+  </body>
+</html>

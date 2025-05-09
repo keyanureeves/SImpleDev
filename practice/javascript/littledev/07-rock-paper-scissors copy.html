@@ -19,8 +19,9 @@
 
     <script>
       function playGame(playerMove) {
-        const computerMove = pickComputerMove(); // calls the fn and then declares return value to a new variable which can now be used 
-        
+        const computerMove = pickComputerMove(); // calls the fn and then declares return value to a new variable which can now be used //can only be used inside the scopes of the function
+
+
 
         let result = '';
 
@@ -55,7 +56,7 @@
         alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}`);
       }
 
-      function pickComputerMove() {
+      function pickComputerMove() {  // functions helps reuse code 
         const randomNumber = Math.random();
 
         let computerMove = '';
